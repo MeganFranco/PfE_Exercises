@@ -1,7 +1,12 @@
 name=raw_input("Enter your name : ") 
 print ("Hello %s" % name);
 
-#exercise 2.3 -- need to use int() around raw_input() in order to get 'hours' to be an
+#exercise 2.3
+"""
+Write a program to prompt the user for hours and rate per hour to
+compute gross pay
+"""
+#-- need to use int() around raw_input() in order to get 'hours' to be an
 #integer class, or else it is 'floor' because you need to set hours to a whole number (35)
 #and it cannot use the multiplication operator to complete the problem
 rate=2.75
@@ -9,12 +14,21 @@ hours=int(raw_input("enter hours: "))
 pay=(rate *  hours)
 print pay
 
-#Exercise 2.5
+#Exercise 2.5 
+"""
+Write a program which prompts the user for a Celsius temperature,
+convert the temperature to Fahrenheit and print out the converted temperature.
+"""
 celc = int(raw_input("Enter temperature in Celcius : "))
 fahr = celc * 1.8 + 32
 print fahr
 
 #Exercise 2.4
+"""
+For each of the following expressions, write the value of the expression and the
+type (of the value of the expression).
+1. width/2 2. width/2.0 3. height/3 4. 1 + 2 * 5
+"""
 width = 17
 height = 12.0
 
