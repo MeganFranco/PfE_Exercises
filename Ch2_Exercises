@@ -1,0 +1,27 @@
+name=raw_input("Enter your name : ") 
+print ("Hello %s" % name);
+
+#exercise 2.3 -- need to use int() around raw_input() in order to get 'hours' to be an
+#integer class, or else it is 'floor' because you need to set hours to a whole number (35)
+#and it cannot use the multiplication operator to complete the problem
+rate=2.75
+hours=int(raw_input("enter hours: "))
+pay=(rate *  hours)
+print pay
+
+#Exercise 2.5
+celc = int(raw_input("Enter temperature in Celcius : "))
+fahr = celc * 1.8 + 32
+print fahr
+
+#Exercise 2.4
+width = 17
+height = 12.0
+
+print width/2
+# the result is 8 because python rounds its answers down when using floor numbers
+print width/2.0
+# the result is 8.5 because the divisor was in integer class
+print height/3
+#4.0
+print 1 + 2 * 5
