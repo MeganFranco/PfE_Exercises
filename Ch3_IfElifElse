@@ -1,28 +1,8 @@
-#3.1
-"""
-Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. 
-Pay the hourly rate for the hours up to 40 and 1.5 times the hourly rate for all hours worked above 40 hours. 
-Use 45 hours and a rate of 10.50 per hour to test the program
-"""
-try:
-
-    hours=float(raw_input("enter Hours: "))
-    rate=float(raw_input("enter Rate: "))
-
-    if hours > 40:
-        pay=(420 + ((hours - 40) * 15.75))
-        #looks like you shouldn't put a command in between "if" and "else"
-    else:
-        pay=(hours * rate)
-    print pay
-except:
-    print "Error, please enter numeric input"
-    
 #3.3
 """
  Write a program to prompt for a score between 0.0 and 1.0. 
  If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade
-"""
+
 inpt = raw_input("Enter Score: ")
 score = float(inpt)
 
@@ -40,4 +20,19 @@ elif score < 0.6:
     print "F" 
 elif score < 0.0:
     print "Error, please enter positive number"
-  
+ """
+ #stage 1
+ inpt = raw_input("Enter Score: ")
+score = float(inpt)
+
+# strategies go here
+
+def stragegyA(score):
+def stragegyB(score):
+def stragegyC(score):
+def stragegyD(score):
+def stragegyF(score):
+
+def grade():
+    # code involving strategies & score
+    return score
