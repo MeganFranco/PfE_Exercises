@@ -1,0 +1,35 @@
+#Exercise 6.3
+#
+def count(word, letter): 
+    count = 0
+    for letter in word: if letter == "a": count = count + 1
+
+    print count
+
+print count("banana", "a")
+
+
+#section 6.10
+
+# The given code to parse a string using the method .find() in section 6.10
+ 
+data = "from stephen.marquard@uct.ac.za Sat Jam 09:14:16 2008" 
+atpos = data.find('@')
+print atpos
+#the index for where @ is in the string should print here
+
+sppos = data.find(' ', atpos) 
+print sppos
+#what prints here is the rest of the string after the @ sign, including the space after  
+#(perhaps to know when the word has ended)
+
+host = data[atpos+1:sppos] # <- so using indicies to parse strings
+print host
+
+
+# 6.4 --> use .count method to find # of times 'a' is in 'banana'
+word = "banana"
+
+use_method = word.count('a')
+
+print use_method

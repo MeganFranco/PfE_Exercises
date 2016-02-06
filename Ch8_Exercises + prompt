@@ -1,0 +1,42 @@
+"""
+EDIT OLDER CODE
+(you'll have to find it first...)
+Exercise 8.6 Rewrite the program that prompts the user for a list of numbers and
+prints out the maximum and minimum of the numbers at the end when the user
+enters “done”. Write the program to store the numbers the user enters in a list
+and use the max() and min() fuctions to compute the maximum and minimum
+numbers after the loop completes.
+Enter a number: 6
+Enter a number: 2
+Enter a number: 9
+Enter a number: 3
+Enter a number: 5
+Enter a number: done
+Maximum: 9.0
+Minimum: 2.0
+"""
+
+# Ex 8.1 - the .pop() method removes the last element from a list unless otherwise specified
+
+def middle(t):
+    t.pop()
+    return t[1:]
+    
+apples = ['a', 'b', 'c', 'd']
+pears = middle(apples)
+print pears
+
+
+
+#8.4(?)
+fname = raw_input("Enter file name: ")
+
+fh = open(fname)
+lst = list(fh)
+count = 1
+
+for line in lst:
+    line.rstrip().sort()
+
+print line
+
